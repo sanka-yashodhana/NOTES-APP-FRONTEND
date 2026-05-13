@@ -36,7 +36,10 @@ const Login =  () => {
       password: password
     });
 
-    console.log("API Response:", response.data);
+    if(response.data && response.data.error){
+      setError(response.data.message || "An error occurred during login. Please try again.");
+      return;
+    }
 
     if(response.data && response.data.accessToken){
       localStorage.setItem("token", response.data.accessToken);

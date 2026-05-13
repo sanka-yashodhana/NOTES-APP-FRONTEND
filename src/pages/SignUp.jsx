@@ -33,6 +33,7 @@ const SignUp = () => {
     }
 
     setError("");
+    setLoading(true);
 
     //Signup API Call
     try {
