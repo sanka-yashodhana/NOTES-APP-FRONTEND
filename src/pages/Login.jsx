@@ -38,8 +38,8 @@ const Login =  () => {
 
     console.log("API Response:", response.data);
 
-    if(response.data && response.data.accesToken){
-      localStorage.setItem("token", response.data.accesToken);
+    if(response.data && response.data.accessToken){
+      localStorage.setItem("token", response.data.accessToken);
       navigate("/dashboard");
     }
   } catch (error) {
