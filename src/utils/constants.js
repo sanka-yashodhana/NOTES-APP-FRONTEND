@@ -1,1 +1,1 @@
-export const BASE_URL = "https://notes-app-backend-peach-one.vercel.app/";
+export const BASE_URL = "https://notes-app-backend-eh5b4snml-sanka-yashodhanas-projects.vercel.app/";
