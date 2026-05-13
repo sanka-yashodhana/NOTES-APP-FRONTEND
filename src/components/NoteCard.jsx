@@ -21,7 +21,7 @@ const NoteCard = ({ title, date, content, tags, isPinned, onEdit, onDelete, onPi
         </button>
       </div>
 
-      <p className="text-sm text-slate-600 mt-3 leading-relaxed line-clamp-3">
+      <p className="text-sm text-slate-600 mt-3 leading-relaxed">
         {content}
       </p>
 
@@ -34,13 +34,13 @@ const NoteCard = ({ title, date, content, tags, isPinned, onEdit, onDelete, onPi
           ))}
         </div>
 
-        <div className="flex items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
+        <div className="flex items-center gap-3 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity">
           <MdCreate
-            className="text-lg text-slate-400 hover:text-green-500 transition-colors"
+            className="text-lg text-slate-400 hover:text-green-500 transition-colors p-1 sm:p-0"
             onClick={(e) => { e.stopPropagation(); onEdit(); }}
           />
           <MdDelete
-            className="text-lg text-slate-400 hover:text-red-500 transition-colors"
+            className="text-lg text-slate-400 hover:text-red-500 transition-colors p-1 sm:p-0"
             onClick={(e) => { e.stopPropagation(); onDelete(); }}
           />
         </div>
